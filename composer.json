@@ -1,0 +1,22 @@
+{
+    "name": "sagor110090/laravel-vue-api-crud-generator",
+    "description": "Creates a basic skeleton for a CRUD app in both Laravel & Vue.js single file components.",
+    "authors": [{
+        "name": "Mehedi Hasan Sagor",
+        "email": "mehedihasansagor.cse@gmail.com"
+    }],
+    "license": "MIT",
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "sagor110090\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "sagor110090\\vueApi\\vueApiServiceProvider"
+            ]
+        }
+    }
+}
