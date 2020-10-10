@@ -11,7 +11,7 @@ A Laravel package that lets you generate boilerplate code for a Vue.js/Laravel a
 This package aims to speed up the process of communicating between backend (Laravel) and frontend (Vue.js).
 
 ### Installation
-`composer require lummy/laravel-vue-api-crud-generator`
+`composer require sagor110090/laravel-vue-api-crud-generator`
 
 
 ## Usage
