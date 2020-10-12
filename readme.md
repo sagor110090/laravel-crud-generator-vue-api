@@ -514,7 +514,7 @@ return [
 ```
 To copy the config file to your working Laravel project enter the following artisan command
 
-`php artisan vendor:publish --provider="lummy\vueApi\vueApiServiceProvider" --tag="config"`
+`php artisan vendor:publish --provider="sagor110090\vueApi\vueApiServiceProvider" --tag="config"`
 
 ##### model_dir
 Specifies the location where the generated model files should be stored
@@ -581,7 +581,7 @@ In Vue.js files the routes are presumed to be: using the posts example. You can 
 /posts (Posts-list.vue)
 /posts/{id} (Posts-single.vue)
 
-Please feel free to contact me with any  feedback or suggestions https://github.com/aarondo
+Please feel free to contact me with any  feedback or suggestions https://github.com/sagor110090
 
 
 
