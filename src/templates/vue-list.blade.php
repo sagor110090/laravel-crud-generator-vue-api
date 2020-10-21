@@ -45,7 +45,7 @@
                     @endforeach
 
                     <div class="form-group">
-                        <button class="btn btn-success" type="submit" :disabled="form.busy"
+                        <button class="btn btn-success btn-sm" type="submit" :disabled="form.busy"
                             name="button">@{{ (form.busy) ? 'Please wait...' : 'Submit'}}</button>
                         <button @click.prevent='backToPrivous' class="btn btn-warning btn-sm" ><i class="fa fa-arrow-left" aria-hidden="true"></i> Back</button>
                     </div>
