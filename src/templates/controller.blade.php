@@ -10,7 +10,7 @@ class {{ $data['plural'] }}Controller extends Controller
     }
     
     public function list(Request $request){
-      return {{ $data['plural'] }}::get();
+      return {{ $data['plural'] }}::latest()->get();;
     }
     
     public function create(Request $request){

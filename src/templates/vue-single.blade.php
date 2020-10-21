@@ -12,8 +12,7 @@
           
 @foreach($data['fields'] as $field)
             <div class="form-group">
-@if($field['name'] == 'id' || $field['name'] == 'updated_at' || $field['name'] == 'created_at' )   
-                  <input type="hidden" v-model="form.{{$field['name']}}">
+@if($field['name'] == 'id' || $field['name'] == 'updated_at' || $field['name'] == 'created_at' )    
 @elseif($field['simplified_type'] == 'text')
                   <label>{{   ucfirst(str_replace('_', ' ', $field['name'])) }}</label>
                   <input type="text" class="form-control" :class="{ 'is-invalid': form.errors.has('{{ $field['name'] }}') }" v-model="form.{{$field['name']}}" @if($field['max']) maxlength="{{$field['max']}}" @endif>
@@ -37,8 +36,8 @@
 @endforeach
       
           <div class="form-group">
-              <button  class="btn btn-success" type="submit" :disabled="form.busy" name="button">@{{ (form.busy) ? 'Please wait...' : 'Update'}}</button>
-              <button class="btn btn-danger" @click.prevent="delete{{$data['singular']}}"><i class="fa fa-trash" v-if="form.busy==false"></i> @{{ (form.busy) ? 'Please wait...' : ''}}</button>
+              <button  class="btn btn-success btn-sm" type="submit" :disabled="form.busy" name="button">@{{ (form.busy) ? 'Please wait...' : 'Update'}}</button>
+              <button class="btn btn-danger btn-sm" @click.prevent="delete{{$data['singular']}}"><i class="fa fa-trash" v-if="form.busy==false"></i> @{{ (form.busy) ? 'Please wait...' : ''}}</button>
           </div>
         </form>
         
@@ -58,7 +57,10 @@
         loaded: false,
         form: new Form({
   @foreach($data['fields'] as $field)
+  @if($field['name'] == 'id' || $field['name'] == 'updated_at' || $field['name'] == 'created_at' )
+  @else
             "{{$field['name']}}" : "",
+  @endif
   @endforeach        
         })
       }
