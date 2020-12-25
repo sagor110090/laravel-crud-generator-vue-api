@@ -15,7 +15,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "sagor110090\\vueApi\\vueApiServiceProvider"
+                "sagor110090\\vueApi\\VueApiServiceProvider"
             ]
         }
     }
