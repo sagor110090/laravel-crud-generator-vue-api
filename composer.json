@@ -9,14 +9,15 @@
     "require": {},
     "autoload": {
         "psr-4": {
-            "sagor110090\\": "src/"
+            "Sagor110090\\LaravelVueApiCrudGenerator": "src/"
         }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "sagor110090\\vueApi\\vueApiServiceProvider"
+                "Sagor110090\\LaravelVueApiCrudGenerator\\VueApiServiceProvider"
             ]
         }
     }
+     
 }
