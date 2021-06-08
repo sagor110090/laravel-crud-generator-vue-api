@@ -9,7 +9,7 @@
     "require": {},
     "autoload": {
         "psr-4": {
-            "Sagor110090\\LaravelVueApiCrudGenerator": "src/"
+            "Sagor110090\\LaravelVueApiCrudGenerator": "src/vueApi/"
         }
     },
     "extra": {
